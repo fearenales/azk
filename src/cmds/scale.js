@@ -28,7 +28,7 @@ class Cmd extends InteractiveCmds {
     return async(this, function* () {
       for (var i = 0; i < systems.length; i++) {
         var system = systems[i];
-        yield this._scale(system, parseInt(opts.to || 1), opts);
+        yield this._scale(system, parseInt(1), opts);
       }
     });
   }
