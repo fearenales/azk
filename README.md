@@ -4,6 +4,8 @@
 
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/azukiapp/azk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Code Climate](https://codeclimate.com/github/azukiapp/azk/badges/gpa.svg)](https://codeclimate.com/github/azukiapp/azk) [![Build Status](http://azkci.ngrok.com/buildStatus/icon?job=azk-build)](http://azkci.ngrok.com/job/azk-build/)
 
+this minor change shouldn't break the build
+
 ## Main features
 
 * Multiplatform: Works on Linux & Mac OS X (requires 64 bit platform in both cases)
