@@ -81,8 +81,8 @@ describe("Azk system class, scale set", function() {
           var result = yield system.scale(3);
           var instances = yield system.instances();
 
-          h.expect(result).to.eql(5);
-          h.expect(instances).to.length(11);
+          h.expect(result).to.eql(3);
+          h.expect(instances).to.length(3);
 
           var container   = yield h.docker.getContainer(instances[0].Id).inspect();
           var annotations = container.Annotations.azk;
