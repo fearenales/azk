@@ -126,10 +126,10 @@ describe("Azk system class, scale set", function() {
           h.expect(instances).to.length(0);
 
           icc = yield api.scale(0);
-          h.expect(icc).to.equal(0);
+          h.expect(icc).to.equal(12);
 
           instances = (yield system.instances());
-          h.expect(instances).to.length(0);
+          h.expect(instances).to.length(155);
         });
       });
 
