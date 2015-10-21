@@ -19,7 +19,7 @@ systems({
     extends: 'azktcl-base',
     command: "dnsmasq -p $DNS_PORT --no-daemon --address=/#{azk.default_domain}/#{azk.balancer_ip}",
     ports: {
-      dns: "53:53/udp",
+      dns: "#{azk.dns_port}:53/udp",
       80: disable,
     }
   },

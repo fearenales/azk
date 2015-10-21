@@ -506,6 +506,7 @@ export class System {
         version       : version,
         default_domain: config('agent:balancer:host'),
         default_dns   : net.nameServers(),
+        dns_port      : config('agent:dns:port'),
         balancer_port : config('agent:balancer:port'),
         balancer_ip   : config('agent:balancer:ip'),
       },
