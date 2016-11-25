@@ -14,6 +14,12 @@ $ azk shell --image azukiapp/node --shell /bin/bash
 # exit
 ```
 
+> Nota: Se você estiver usando Linux, você terá que transferir a propriedade da pasta gerada para seu usuário. Isso acontece pois o container é executado como usuário root, portanto todos os arquivos e pastas gerados dentro do container pertencem ao usuário root. Para fazer esta correção, basta executar:
+
+```sh
+$ sudo chown -R `id -un`:`id -gn` .
+```
+
 ### Gerando o Azkfile.js
 
 ```sh

@@ -9,6 +9,12 @@ $ azk shell --image azukiapp/python --shell /bin/bash
 # exit
 ```
 
+> Note: If you're on Linux, you have to fix the ownership of the resulting folder. This is because the container run as root user, so that all created files and folder own to the root user. To do this fix, just run:
+
+```sh
+$ sudo chown -R `id -un`:`id -gn` <my-app>
+```
+
 ### Creating the Azkfile.js
 
 ```sh
